@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="(link unavailable)"
-         xmlns:xsi="(link unavailable)"
-         xsi:schemaLocation="(link unavailable) 
-         (link unavailable)">
+<project xmlns="(link unavailable)" xmlns:xsi="(link unavailable)"
+         xsi:schemaLocation="(link unavailable) (link unavailable)">
     <modelVersion>4.0.0</modelVersion>
     <groupId>works.buddy.samples</groupId>
     <artifactId>works-with-heroku</artifactId>
@@ -72,6 +70,14 @@
                 <version>3.2.5</version>
                 <configuration>
                     <argLine>--add-opens=java.base/java.lang=ALL-UNNAMED</argLine>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.3.2</version>
+                <configuration>
+                    <warSourceDirectory>src/main/webapp</warSourceDirectory>
                 </configuration>
             </plugin>
         </plugins>
