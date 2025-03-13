@@ -2,7 +2,7 @@
 FROM tomcat:9.0-jdk11-openjdk
 
 # Copy the .war file into the Tomcat webapps directory
-COPY target/*.war /usr/local/tomcat/webapps/app.war
+COPY target/*.war /usr/local/tomcat/webapps/ROOT.war
 
 # Expose the default Tomcat port
 EXPOSE 8080
