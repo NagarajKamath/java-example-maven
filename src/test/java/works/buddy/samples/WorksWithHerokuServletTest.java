@@ -36,6 +36,6 @@ public class WorksWithHerokuServletTest {
         when(response.getWriter()).thenReturn(writer);
 
         servlet.doGet(request, response);
-        assertEquals("WEB APP Created by Nagaraj is WORKING \n\n\t -Nagaraj", new String( out.toByteArray(), "UTF-8"));
+        assertEquals("WEB APP Created by Nagaraj is WORKING \n\n\t\n\n\t -Nagaraj", new String( out.toByteArray(), "UTF-8"));
     }
 }
