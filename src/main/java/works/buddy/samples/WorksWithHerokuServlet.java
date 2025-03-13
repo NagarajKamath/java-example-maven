@@ -13,7 +13,7 @@ public class WorksWithHerokuServlet extends HttpServlet {
         response.setContentType("text/plain");
         response.setStatus(404);
         PrintWriter writer = response.getWriter();
-        writer.print("WEB APP WORKING");
+        writer.print("WEB APP Created by Nagaraj is WORKING");
         writer.close();
     }
 }
